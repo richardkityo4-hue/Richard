@@ -1,5 +1,4 @@
-# King's and Queen's University (KQU)
-## Smart Campus Student Management and Academic Information System
+Smart Campus Student Management and Academic Information System
 **Technology:** Java, JDBC / SQLite & MySQL, Object-Oriented Programming (OOP), Swing/Web  
 **Coursework Submission:** e-campus & GitHub Repository  
 
@@ -113,49 +112,3 @@ The system strictly enforces the university's royal heraldic palette:
 - 60% - 64%: **C** (3.0 GP) - Pass
 - 50% - 59%: **D** (2.0 GP) - Marginal Pass
 - Below 50%: **F** (0.0 GP) - Retake
-
----
-
-### 6. Running the System in Visual Studio Code (VS Code)
-
-You have **TWO** ways to run the project depending on your preference:
-
-#### **Option A: Web-Based Version (HTML5, CSS3, JavaScript, Java Backend, SQLite Database)**
-
-1. Open the `KingsQueensUniversity` folder in VS Code.
-2. Ensure you have the **"Extension Pack for Java"** installed in VS Code.
-3. Open `src/main/java/com/kqu/web/WebServer.java`.
-4. Click **"Run"** above `public static void main(String[] args)` (or press the green Play button).
-5. Open your web browser and go to:
-   👉 **`http://localhost:8080`**
-6. Alternatively, in the VS Code integrated terminal (`Ctrl + ~`):
-   - On Linux/macOS:
-     ```bash
-     chmod +x run-web.sh && ./run-web.sh
-     ```
-   - On Windows:
-     ```cmd
-     run-web.bat
-     ```
-
-*Note:* You can also open `web/index.html` directly or with VS Code's "Live Server" extension to inspect the frontend interface!
-
-#### **Option B: Java Desktop Application (Swing GUI + SQLite Database)**
-
-1. Open `src/main/java/com/kqu/Main.java`.
-2. Click **"Run"** above `public static void main(String[] args)`.
-3. The desktop GUI window will launch directly on your screen.
-
----
-
-### 7. Compilation & Execution via Terminal (Manual)
-```bash
-# 1. Compile all Java source files
-javac -d bin src/main/java/com/kqu/*.java src/main/java/com/kqu/*/*.java
-
-# 2. Run Web Edition (HTML/CSS/JS + Java Web Server + SQLite)
-java -cp bin com.kqu.web.WebServer
-
-# OR Run Desktop Edition (Swing GUI)
-java -cp bin com.kqu.Main
-```
